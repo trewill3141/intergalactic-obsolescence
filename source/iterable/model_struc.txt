@@ -1,0 +1,22 @@
+models/
+|-- base/
+|   |-- base.sql            # Contains any reusable macros or common configurations
+|-- dimensions/
+|   |-- dim_campaign.sql    # Dimensional table for campaigns
+|   |-- dim_organization.sql# Dimensional table for organizations
+|   |-- dim_project.sql     # Dimensional table for projects
+|   |-- dim_user.sql        # Dimensional table for users
+|-- facts/
+|   |-- fact_email_blast_send.sql        # Fact table for Email Blast Send events
+|   |-- fact_email_bounce.sql            # Fact table for Email Bounce events
+|   |-- fact_email_click.sql             # Fact table for Email Click events
+|   |-- fact_email_complaint.sql         # Fact table for Email Complaint events
+|   |-- fact_email_open.sql               # Fact table for Email Open events
+|   |-- fact_email_send_skip.sql          # Fact table for Email Send Skip events
+|   |-- fact_email_subscribe.sql          # Fact table for Email Subscribe events
+|   |-- fact_email_triggered_send.sql    # Fact table for Email Triggered Send events
+|   |-- fact_email_unsubscribe.sql        # Fact table for Email Unsubscribe events
+|   |-- fact_hosted_unsubscribe_click.sql # Fact table for Hosted Unsubscribe Click events
+|   |-- fact_in_app_click.sql             # Fact table for In-App Click events
+|   |-- fact_in_app_close.sql             # Fact table for In-App Close events
+|-- snowflake_dbt_project.yml            # DBT project configuration file
